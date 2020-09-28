@@ -4,7 +4,7 @@
 def dissipated_power(voltage, resistance):
 	# TODO: Calculer la puissance dissipée par la résistance.
     puissance = (voltage ** 2) / resistance
-	return power
+	return puissance
 
 def orthogonal(v1, v2):
 	# TODO: Retourner vrai si les vecteurs sont orthogonaux, faux sinon.
