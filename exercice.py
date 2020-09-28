@@ -3,8 +3,8 @@
 
 def dissipated_power(voltage, resistance):
 	# TODO: Calculer la puissance dissipée par la résistance.
-    poxer = (voltage ** 2)/resistance
-	return 0
+    poxer = (voltage ** 2) / resistance
+	return po
 
 def orthogonal(v1, v2):
 	# TODO: Retourner vrai si les vecteurs sont orthogonaux, faux sinon.
