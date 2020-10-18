@@ -43,7 +43,21 @@ def bills(value):
 			ones += value
 			value = 0
 	return (twenties, tens, fives, ones)
-
+	#Alternativement ce code marche aussi
+	# twenties = tens = fives = ones = 0
+	# while value >= 20:
+	# 	value -= 20
+	# 	twenties += 1
+	# while value >= 10:
+	# 	value -= 10
+	# 	tens += 1
+	# while value >= 5:
+	# 	value -= 5
+	# 	fives += 1
+	# while value >= 1:
+	# 	value -= 1
+	# 	ones += 1
+	# return (twenties, tens, fives, ones)
 if __name__ == "__main__":
 	# print(dissipated_power(69, 420))
 	# print(orthogonal((1, 1), (-1, 1)))
