@@ -44,22 +44,35 @@ def bills(value):
 			value = 0
 	return (twenties, tens, fives, ones)
 	#Alternativement ce code marche aussi
-	# twenties = tens = fives = ones = 0
-	# while value >= 20:
-	# 	value -= 20
-	# 	twenties += 1
-	# while value >= 10:
-	# 	value -= 10
-	# 	tens += 1
-	# while value >= 5:
-	# 	value -= 5
-	# 	fives += 1
-	# while value >= 1:
-	# 	value -= 1
-	# 	ones += 1
-	# return (twenties, tens, fives, ones)
+	#def bills(value):
+		# twenties = tens = fives = ones = 0
+		# while value >= 20:
+		# 	value -= 20
+		# 	twenties += 1
+		# while value >= 10:
+		# 	value -= 10
+		# 	tens += 1
+		# while value >= 5:
+		# 	value -= 5
+		# 	fives += 1
+		# while value >= 1:
+		# 	value -= 1
+		# 	ones += 1
+		# return (twenties, tens, fives, ones)
+	# une seconde alternative pour manipulation des listes
+# def bills(value,bill_values):
+# 	# bill_values =[20, 10, 5, 1]
+# 	result=[]
+# 	i=0
+# 	for bill in bill_values:
+# 		if value >= bill:
+# 			result += [value // bill]
+# 			value = value % bill
+# 			i +=1
+# 	return result
 if __name__ == "__main__":
 	# print(dissipated_power(69, 420))
 	# print(orthogonal((1, 1), (-1, 1)))
 	#  print(average([1, 4, -2, 10]))
 	print(bills(137))
+	# print(bills(137, [20, 10, 5, 1]))
